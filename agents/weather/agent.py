@@ -10,7 +10,7 @@ from tools.weather import convert_temperature, get_weather
 from neurostack_runtime.service import tenant_model
 
 root_agent = LlmAgent(
-    name="weather",
+    name="tenant_weather_agent",
     model=tenant_model(),
     description="Looks up current weather for a city and converts temperatures.",
     instruction=(
