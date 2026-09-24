@@ -1,5 +1,5 @@
 {
-  "name": "weather",
+  "name": "tenant_weather_agent",
   "description": "Looks up current weather for a city and converts temperatures.",
   "capabilities": [
     "tools",
