@@ -1,0 +1,9 @@
+{
+  "name": "weather",
+  "description": "Looks up current weather for a city and converts temperatures.",
+  "capabilities": [
+    "tools",
+    "sessions",
+    "streaming"
+  ]
+}

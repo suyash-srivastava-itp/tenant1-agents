@@ -1,0 +1,6 @@
+{
+  "base_image": "neurostack-runtime:0.0.1",
+  "allowed_dependencies": [
+    "requests==2.32.*"
+  ]
+}
