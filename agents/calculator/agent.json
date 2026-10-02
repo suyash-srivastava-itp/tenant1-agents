@@ -1,0 +1,9 @@
+{
+  "name": "calculator",
+  "description": "Performs arithmetic using the tenant's own tools.",
+  "capabilities": [
+    "tools",
+    "sessions",
+    "streaming"
+  ]
+}

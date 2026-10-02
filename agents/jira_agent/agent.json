@@ -1,0 +1,15 @@
+{
+  "name": "jira_agent",
+  "description": "Fetches and updates Jira tickets using the tenant's own Jira credentials.",
+  "capabilities": [
+    "tools",
+    "sessions",
+    "streaming",
+    "tenant_credentials"
+  ],
+  "credentials": [
+    "JIRA_URL",
+    "JIRA_USERNAME",
+    "JIRA_API_TOKEN"
+  ]
+}

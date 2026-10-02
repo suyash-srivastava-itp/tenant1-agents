@@ -7,7 +7,7 @@ one helper from the runtime package, and the tenant's own tools. Nothing else.
 from google.adk.agents import LlmAgent
 from tools.weather import convert_temperature, get_weather
 
-from neurostack_runtime.service import tenant_model
+from service import tenant_model
 
 root_agent = LlmAgent(
     name="tenant_weather_agent",

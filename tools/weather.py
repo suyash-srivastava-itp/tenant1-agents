@@ -8,7 +8,9 @@ else from NeuroStack - `modular_agents` does not exist in the runtime image.
 
 import requests
 
-from neurostack_runtime import err, get_logger, ok, tool_category, tool_tags
+from harness import err, ok
+from registry import tool_category, tool_tags
+from runtime_logging import get_logger
 
 GEOCODING_URL = "https://geocoding-api.open-meteo.com/v1/search"
 FORECAST_URL = "https://api.open-meteo.com/v1/forecast"
