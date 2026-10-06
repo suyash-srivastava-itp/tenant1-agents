@@ -1,0 +1,15 @@
+{
+  "name": "e2e_merge_test_agent",
+  "displayName": "E2E Merge Test Agent",
+  "description": "E2E merge verification test agent - safe to delete",
+  "url": "http://localhost:8001/a2a/e2e_merge_test_agent",
+  "version": "1.0.0",
+  "protocolVersion": "0.3",
+  "capabilities": {},
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain"
+  ]
+}

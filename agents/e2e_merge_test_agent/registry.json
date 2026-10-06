@@ -1,0 +1,61 @@
+{
+  "artifact_type": "agent",
+  "change_type": "create",
+  "config": {
+    "agent_level_auth_required": false,
+    "connectors": [],
+    "description": "E2E merge verification test agent - safe to delete",
+    "direct_tools": null,
+    "guardrails": {
+      "custom_config": null,
+      "enable_traceability": true,
+      "enabled_input_guardrails": [],
+      "enabled_output_guardrails": [],
+      "log_to_file": true
+    },
+    "instructions": "You are a test agent for merge verification. Say hello.",
+    "mcp_servers": [],
+    "model_settings": {
+      "max_tokens": null,
+      "name": "default",
+      "temperature": 0.7,
+      "top_k": null,
+      "top_p": null
+    },
+    "name": "e2e_merge_test_agent",
+    "oauth_protected_tools": [],
+    "policies": null,
+    "skill_refs": [],
+    "skills": [],
+    "tags": null,
+    "tenant_mcp_servers": [],
+    "tenant_skills": [],
+    "tenant_tools": [],
+    "tool_guardrails": null
+  },
+  "created_by": null,
+  "dependencies": [],
+  "description": "E2E merge verification test agent - safe to delete",
+  "display_name": "E2E Merge Test Agent",
+  "files": [
+    "agents/e2e_merge_test_agent/agent.json",
+    "agents/e2e_merge_test_agent/agent.py",
+    "agents/e2e_merge_test_agent/manifest.json",
+    "agents/e2e_merge_test_agent/prompt.py"
+  ],
+  "name": "e2e_merge_test_agent",
+  "origin": "tenant_generated",
+  "replaces_version_no": null,
+  "restored_from_version_no": null,
+  "risk": {
+    "decision_id": "risk_3e47a478661b",
+    "tier": 1
+  },
+  "schema_version": 1,
+  "secret_refs": [],
+  "source": "internal_ui",
+  "source_type": "generated",
+  "tags": [],
+  "version": "1.0.0",
+  "version_no": 1
+}
