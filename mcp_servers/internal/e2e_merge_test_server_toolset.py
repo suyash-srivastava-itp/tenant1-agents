@@ -11,6 +11,12 @@ from typing import Any, Dict, List, Optional
 
 import importlib.util as _ilu
 import pathlib as _pl
+_spec_tools_cryptocurrency_tools = _ilu.spec_from_file_location(
+    'cryptocurrency_tools',
+    _pl.Path(__file__).parent.parent.parent / 'tools' / 'cryptocurrency_tools.py',
+)
+_mod_tools_cryptocurrency_tools = _ilu.module_from_spec(_spec_tools_cryptocurrency_tools)
+_spec_tools_cryptocurrency_tools.loader.exec_module(_mod_tools_cryptocurrency_tools)
 _spec_tools_weather_tools = _ilu.spec_from_file_location(
     'weather_tools',
     _pl.Path(__file__).parent.parent.parent / 'tools' / 'weather_tools.py',
@@ -19,6 +25,7 @@ _mod_tools_weather_tools = _ilu.module_from_spec(_spec_tools_weather_tools)
 _spec_tools_weather_tools.loader.exec_module(_mod_tools_weather_tools)
 
 tool_get_current_weather = _mod_tools_weather_tools.get_current_weather
+tool_get_crypto_price = _mod_tools_cryptocurrency_tools.get_crypto_price
 
 mcp = FastMCP("e2e_merge_test_server")
 
@@ -30,6 +37,15 @@ async def get_current_weather(city: str, country_code: Optional = None, units: s
     Calls the `get_current_weather` tool from the `weather_tools` tool module.
     """
     return tool_get_current_weather(city=city, country_code=country_code, units=units)
+
+
+@mcp.tool()
+async def get_crypto_price(symbol: str) -> Dict[str, Any]:
+    """
+    Auto-generated MCP tool wrapper for `get_crypto_price`.
+    Calls the `get_crypto_price` tool from the `cryptocurrency_tools` tool module.
+    """
+    return tool_get_crypto_price(symbol=symbol)
 
 
 if __name__ == "__main__":

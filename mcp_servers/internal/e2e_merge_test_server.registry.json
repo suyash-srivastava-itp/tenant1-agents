@@ -1,15 +1,23 @@
 {
   "artifact_type": "mcp",
-  "change_type": "create",
+  "change_type": "edit",
   "config": {
-    "description": "E2E merge verification test server - safe to delete",
+    "description": "E2E merge verification test server - edited - safe to delete",
     "server_name": "e2e_merge_test_server",
     "tools": [
-      "get_current_weather"
+      "get_current_weather",
+      "get_crypto_price"
     ]
   },
   "created_by": null,
   "dependencies": [
+    {
+      "name": "cryptocurrency_tools.py",
+      "origin": "platform",
+      "type": "tool",
+      "upstream_content_hash": "07a3022efcc9f428a204e35d712808e0d798057ad8a96894ef9401d245560442",
+      "upstream_version": "platform"
+    },
     {
       "name": "weather_tools.py",
       "origin": "platform",
@@ -18,7 +26,7 @@
       "upstream_version": "platform"
     }
   ],
-  "description": "E2E merge verification test server - safe to delete",
+  "description": "E2E merge verification test server - edited - safe to delete",
   "display_name": "E2E Merge Test Server",
   "files": [
     "mcp_servers/internal/e2e_merge_test_server.py",
@@ -26,17 +34,17 @@
   ],
   "name": "e2e_merge_test_server.py",
   "origin": "tenant_generated",
-  "replaces_version_no": null,
+  "replaces_version_no": 1,
   "restored_from_version_no": null,
   "risk": {
-    "decision_id": "risk_7eaa5b0037ca",
-    "tier": 1
+    "decision_id": "risk_415f7ece8c09",
+    "tier": 2
   },
   "schema_version": 1,
   "secret_refs": [],
   "source": "internal_ui",
   "source_type": "generated",
   "tags": [],
-  "version": "1.0.0",
-  "version_no": 1
+  "version": "1.0.1",
+  "version_no": 2
 }
