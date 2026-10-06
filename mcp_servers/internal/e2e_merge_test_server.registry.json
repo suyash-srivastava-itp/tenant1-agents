@@ -1,0 +1,42 @@
+{
+  "artifact_type": "mcp",
+  "change_type": "create",
+  "config": {
+    "description": "E2E merge verification test server - safe to delete",
+    "server_name": "e2e_merge_test_server",
+    "tools": [
+      "get_current_weather"
+    ]
+  },
+  "created_by": null,
+  "dependencies": [
+    {
+      "name": "weather_tools.py",
+      "origin": "platform",
+      "type": "tool",
+      "upstream_content_hash": "d36c51e09dda1b8ca6822ea344b7613d9efde080aa85d729e3e2f5aa5b0d4084",
+      "upstream_version": "platform"
+    }
+  ],
+  "description": "E2E merge verification test server - safe to delete",
+  "display_name": "E2E Merge Test Server",
+  "files": [
+    "mcp_servers/internal/e2e_merge_test_server.py",
+    "mcp_servers/internal/e2e_merge_test_server_toolset.py"
+  ],
+  "name": "e2e_merge_test_server.py",
+  "origin": "tenant_generated",
+  "replaces_version_no": null,
+  "restored_from_version_no": null,
+  "risk": {
+    "decision_id": "risk_7eaa5b0037ca",
+    "tier": 1
+  },
+  "schema_version": 1,
+  "secret_refs": [],
+  "source": "internal_ui",
+  "source_type": "generated",
+  "tags": [],
+  "version": "1.0.0",
+  "version_no": 1
+}
